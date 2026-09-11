@@ -57,7 +57,12 @@ opencode needs an API key attached before it can do anything. In the opencode wi
 /connect
 ```
 
-and press Enter. Pick the provider from the list, then paste in the API key when it asks. Afterwards, type `/models` to confirm the provider's models show up.
+and press Enter. It asks two things:
+
+1. **Provider** — pick **OpenRouter** from the list.
+2. **API key** — paste in the key Pheirce Bytes gave you.
+
+Then choose the model. Type `/models`, press Enter, and select **DeepSeek V4 Flash 0731**.
 
 **This step should be done by you, not the student** — it involves entering a real credential, and there's no reason a first-time setup needs a minor creating or holding that account/key themselves. opencode remembers the key, so this is a one-time step; the next time the shortcut is double-clicked it'll be ready to go.
 
