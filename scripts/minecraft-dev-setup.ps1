@@ -22,8 +22,8 @@
     they explicitly advise against VS Code for this).
 
     Part 3 - Workspace: creates the devel\sentient-pets project folder and
-    a "Pheirce Bytes" folder on the Desktop with PowerShell and IntelliJ
-    shortcuts that both open straight into it.
+    a "Pheirce Bytes" folder on the Desktop with PowerShell, IntelliJ and
+    opencode shortcuts that all open straight into it.
 
 .NOTES
     Run in a normal PowerShell window (Windows PowerShell 5.1 or PowerShell 7
@@ -355,6 +355,24 @@ if ($ij) {
     Write-Host "  Re-run this script after confirming IntelliJ installed to generate it." -ForegroundColor Yellow
 }
 
+# opencode shortcut - opens PowerShell in the project folder and starts the
+# AI coding agent there. Goes through powershell.exe rather than pointing at
+# opencode.exe directly because (a) opencode is a terminal app that needs a
+# console window anyway, and (b) it was likely just installed by winget, so
+# this session's PATH may not see it yet - resolving it at launch time
+# instead of now means the shortcut still works once the PATH is refreshed.
+# -NoExit keeps the window open if opencode fails to start, so the error is
+# readable instead of flashing and vanishing.
+$ocShortcutPath = Join-Path $shortcutFolder "opencode.lnk"
+$ocShortcut = $WshShell.CreateShortcut($ocShortcutPath)
+$ocShortcut.TargetPath = $posh
+$ocShortcut.Arguments = "-NoExit -ExecutionPolicy Bypass -Command `"Set-Location -LiteralPath '$projectDir'; opencode`""
+$ocShortcut.WorkingDirectory = $projectDir
+$ocShortcut.IconLocation = "$posh,0"
+$ocShortcut.Description = "opencode (AI coding agent) in sentient-pets"
+$ocShortcut.Save()
+Write-Host "  Created shortcut: $ocShortcutPath" -ForegroundColor Green
+
 # ----------------------------------------------------------------------
 # Summary
 # ----------------------------------------------------------------------
@@ -370,4 +388,4 @@ Write-Host "Close and reopen this terminal window before running 'java -version'
 Write-Host "PATH changes from the installs above won't be picked up in this window." -ForegroundColor Yellow
 Write-Host ""
 Write-Host "From now on, use the shortcuts in the 'Pheirce Bytes' folder on the Desktop -" -ForegroundColor Cyan
-Write-Host "both open straight into $projectDir" -ForegroundColor Cyan
+Write-Host "they all open straight into $projectDir" -ForegroundColor Cyan

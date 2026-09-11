@@ -12,7 +12,7 @@ This gets a Windows machine ready for session 1. Takes about 10-15 minutes, most
 
 - Git, IntelliJ IDEA (Community Edition), Java 25, the Modrinth App, and opencode (our AI coding agent) installed
 - A project folder at `devel\sentient-pets` in your user folder
-- A **Pheirce Bytes** folder on your Desktop with one-click shortcuts into that project
+- A **Pheirce Bytes** folder on your Desktop with one-click shortcuts into that project: a PowerShell terminal, IntelliJ IDEA, and opencode
 - A Fabric mod instance in Modrinth App, named **Sentient Pets**, ready to test in
 
 ## Before you start
@@ -50,6 +50,8 @@ opencode auth login
 ```
 
 and follow the prompts. **This step should be done by you, not the student** — it involves entering a real credential, and there's no reason a first-time setup needs a minor creating or holding that account/key themselves.
+
+Once that's done, the **opencode** shortcut in the Pheirce Bytes folder on the Desktop opens a terminal in the project folder with opencode already running — that's the normal way to start it from now on.
 
 ## Step 4 — Create the Fabric instance in Modrinth App
 
