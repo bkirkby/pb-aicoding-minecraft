@@ -104,4 +104,4 @@ Make sure you opened PowerShell first and ran the script *inside* that window (S
 
 ## What's next
 
-Session 2 picks up from here: writing the first line of the mod, meeting opencode as a coding partner, and launching Minecraft into the Sentient Pets instance for the first time.
+[Session 1](../lessons/session1.md) picks up from here: describing the mod to opencode, planning it together, and letting the AI build the first version. Session 2 gets it running in the Sentient Pets instance.

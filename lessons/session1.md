@@ -68,7 +68,7 @@ Every one of those is a game design question. The AI can suggest answers, but th
 
 Answer its questions. Ask your own. Push back if you don't like something. A few useful things to say:
 
-- "What's the simplest version of this that we could get running today?"
+- "What's the simplest version of this that we could get running first?"
 - "What part of this is going to be hardest?"
 - "If you were building this for yourself, what would you do differently?"
 - "Give me two different ways to do the quest giver and tell me which you'd pick."
