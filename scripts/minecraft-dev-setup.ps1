@@ -43,7 +43,7 @@ function Write-Section($title) {
 # PART 0: Open the full setup guide
 # ----------------------------------------------------------------------
 
-$guideUrl = "https://github.com/<your-username>/<repo>/blob/main/windows-setup-guide.md"
+$guideUrl = "https://github.com/bkirkby/pb-aicoding-minecraft/blob/main/guides/windows-setup-guide.md"
 
 Write-Section "Opening the setup guide"
 Write-Host "  Opening the full guide in your browser - keep this window open too," -ForegroundColor Cyan

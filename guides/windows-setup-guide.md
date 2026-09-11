@@ -26,7 +26,7 @@ Go back to that terminal window; it's working through the automated setup right 
 
 Everything else — installing Git, IntelliJ, Java, Modrinth App, opencode, configuring the IntelliJ plugin, building the desktop shortcuts — happens without further input. If a Windows permission popup appears partway through, that's a normal part of one of the installers; click **Yes**.
 
-Didn't get here by running the script? Download `minecraft-dev-setup.ps1` from **[link]**, open PowerShell normally (not "Run as administrator"), `cd` to wherever you saved it, and run:
+Didn't get here by running the script? Download `minecraft-dev-setup.ps1` from [the course repo](https://github.com/bkirkby/pb-aicoding-minecraft/raw/main/scripts/minecraft-dev-setup.ps1), open PowerShell normally (not "Run as administrator"), `cd` to wherever you saved it, and run:
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\minecraft-dev-setup.ps1
 ```
