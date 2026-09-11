@@ -37,21 +37,29 @@ Didn't get here by running the script? Download `minecraft-dev-setup.ps1` from [
 powershell -ExecutionPolicy Bypass -File .\minecraft-dev-setup.ps1
 ```
 
-## Step 2 — Reopen your terminal
+## Step 2 — Close the terminal and use the shortcuts
 
-Close the PowerShell window once the script finishes, then open a fresh one. This matters: PATH changes from the installs above won't be picked up in the same window they were installed in.
+Close the PowerShell window once the script finishes. Don't reuse it: the installs above changed the PATH, and a window that was already open won't see those changes.
+
+From here on, everything starts from the **Pheirce Bytes** folder the script put on your Desktop. Open it and you'll find three shortcuts, each of which opens straight into the `sentient-pets` project folder:
+
+- **opencode** — the AI coding agent. Opens a terminal in the project folder with opencode already running. This is the one you'll use most.
+- **IntelliJ IDEA** — the code editor. Use it to read and edit the mod's Java code, and to run and debug it.
+- **PowerShell** — a plain terminal in the project folder, for running git or other commands by hand.
+
+Double-click **opencode** now.
 
 ## Step 3 — Sign in the AI coding agent
 
-opencode needs an API key attached before it can do anything. Run:
+opencode needs an API key attached before it can do anything. In the opencode window that just opened, type:
 
-```powershell
-opencode auth login
+```
+/connect
 ```
 
-and follow the prompts. **This step should be done by you, not the student** — it involves entering a real credential, and there's no reason a first-time setup needs a minor creating or holding that account/key themselves.
+and press Enter. Pick the provider from the list, then paste in the API key when it asks. Afterwards, type `/models` to confirm the provider's models show up.
 
-Once that's done, the **opencode** shortcut in the Pheirce Bytes folder on the Desktop opens a terminal in the project folder with opencode already running — that's the normal way to start it from now on.
+**This step should be done by you, not the student** — it involves entering a real credential, and there's no reason a first-time setup needs a minor creating or holding that account/key themselves. opencode remembers the key, so this is a one-time step; the next time the shortcut is double-clicked it'll be ready to go.
 
 ## Step 4 — Create the Fabric instance in Modrinth App
 
