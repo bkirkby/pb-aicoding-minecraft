@@ -1,0 +1,39 @@
+# Learn AI Coding Through Minecraft Modding
+
+Course materials for **Learn AI Coding Through Minecraft Modding** (curriculum codename: *The Sentience Quest*). Students build a Fabric mod for Minecraft Java Edition while learning to work with an AI coding agent.
+
+This repo holds everything needed to run and take the course: setup instructions, automation scripts, and the lessons themselves.
+
+## Repository layout
+
+| Folder | What lives here |
+| --- | --- |
+| `guides/` | Step-by-step instructions for students (environment setup, troubleshooting, reference). |
+| `scripts/` | Automation that installs and configures the development environment. |
+| `lessons/` | Session-by-session lesson content, exercises, and starter material. |
+
+## Getting started (students)
+
+1. Make sure **Minecraft Java Edition** is installed and has been launched at least once.
+2. Download `scripts/minecraft-dev-setup.ps1` and run it from a normal PowerShell window (no admin needed):
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\minecraft-dev-setup.ps1
+   ```
+3. Follow along in `guides/windows-setup-guide.md`. The script opens it for you automatically.
+
+The setup script installs Git, IntelliJ IDEA Community Edition, Java, the Modrinth App, and the opencode AI coding agent, then creates a `sentient-pets` project folder and desktop shortcuts into it.
+
+macOS and Linux setup guides are planned but not yet written.
+
+## What students build
+
+Over the course, students create the **Sentient Pets** Fabric mod, using an AI coding agent as a collaborator. Along the way they learn:
+
+- How to describe a coding task clearly enough for an AI agent to do it well
+- How to read, test, and review code the agent writes
+- Git basics: committing, branching, and recovering from mistakes
+- The structure of a Minecraft mod and how the game loads it
+
+## Contributing
+
+Guides are plain Markdown. Scripts should be safe to re-run and skip anything already installed. Lessons go in `lessons/` as one folder per session.
