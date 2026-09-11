@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/pheircebytes-matrix.png" alt="Pheirce Bytes bear chewing on a keyboard, drawn in green 1s and 0s" width="480">
+</p>
+
 # Learn AI Coding Through Minecraft Modding
 
 Course materials for **Learn AI Coding Through Minecraft Modding** (curriculum codename: *The Sentience Quest*). Students build a Fabric mod for Minecraft Java Edition while learning to work with an AI coding agent.
