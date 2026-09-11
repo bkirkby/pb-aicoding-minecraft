@@ -1,3 +1,3 @@
 # Lessons
 
-One folder per session, e.g. `01-setup-and-first-mod/`. Each session folder should contain a `README.md` with the lesson plan, plus any exercises or starter files.
+One Markdown file per session, numbered: `session1.md`, `session2.md`, and so on. Each one should say what the session is for, what it assumes is already done, the steps, and what the student should walk away with.
