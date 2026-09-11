@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../assets/pheircebytes-matrix.png" alt="Pheirce Bytes bear chewing on a keyboard, drawn in green 1s and 0s" width="360">
+</p>
+
 # Windows Setup Guide — The Sentience Quest
 
 This gets a Windows machine ready for session 1. Takes about 10-15 minutes, most of it automatic. Minecraft: macOS and Linux guides are coming — this one's Windows-only.
