@@ -34,13 +34,17 @@ macOS and Linux setup guides are planned but not yet written.
 
 ## What students build
 
-Over the course, students create the **Sentient Pets** Fabric mod, using an AI coding agent as a collaborator. Along the way they learn:
+Over five one-hour sessions, students create the **Sentient Pets** Fabric mod, using an AI coding agent as a collaborator. A quest giver hands out a chain of gather quests that ends in a sentience potion. Feed it to a pet and the pet wakes up and talks. By the end, the pet's replies come from a small language model running on the student's own laptop through llama.cpp, with hand-written lines as the fallback, and the mod downloads and manages that model itself, asking the player first.
 
-- How to describe a coding task clearly enough for an AI agent to do it well
-- How to read, test, and review code the agent writes
-- Git basics: committing, branching, and recovering from mistakes
+Along the way they learn:
+
+- How to describe what the player should experience, and let the AI decide how to build it
+- How to report a bug so a human or an AI can act on it
+- How to play-test for feel, not just function, and say "that works, but it's flat"
+- Git basics: committing whenever something works, and reading the history back
 - The structure of a Minecraft mod and how the game loads it
+- What a model, a harness, and a fallback are, by building all three
 
 ## Contributing
 
-Guides are plain Markdown. Scripts should be safe to re-run and skip anything already installed. Lessons go in `lessons/` as one folder per session.
+Guides are plain Markdown. Scripts should be safe to re-run and skip anything already installed. Lessons go in `lessons/` as one file per session, with a matching talking-points file for the instructor.

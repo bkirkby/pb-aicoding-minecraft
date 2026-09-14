@@ -6,7 +6,7 @@
 
 A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting).
 
-This gets a Windows machine ready for session 1. Takes about 10-15 minutes, most of it automatic. Minecraft: macOS and Linux guides are coming — this one's Windows-only.
+This gets a Windows machine ready for session 1. Treat it as its own short session with the instructor present: the script runs for 10-15 minutes mostly on its own, and the sign-in and Modrinth steps after it are done together. Allow 30-45 minutes all in. macOS and Linux guides are coming — this one's Windows-only.
 
 ## What you'll end up with
 
@@ -101,6 +101,17 @@ winget install -e --id Modrinth.ModrinthApp --source winget --force --accept-pac
 
 **Nothing happens after running the script**
 Make sure you opened PowerShell first and ran the script *inside* that window (Step 1), rather than right-clicking the file and choosing "Run with PowerShell" — that method can close the window immediately on an error or a prompt, before you get a chance to see or respond to anything.
+
+## Done? Check these before session 1
+
+Run through this list at the end of the setup visit. Every item should pass; if one doesn't, the Troubleshooting section above or a quick question to opencode usually sorts it.
+
+- The **Pheirce Bytes** folder on the Desktop has three shortcuts: opencode, IntelliJ IDEA, PowerShell
+- The **opencode** shortcut opens a terminal in the `sentient-pets` folder with opencode running, and it's signed in (type `/models` and the DeepSeek model is selected)
+- opencode answers a question. Type "what folder are you in?" and get a sensible reply
+- The **IntelliJ IDEA** shortcut opens without a version warning
+- **Modrinth App** has a **Sentient Pets** instance on Fabric 26.2 with Fabric API installed, and it launches to the Minecraft title screen
+- Closing everything and reopening the opencode shortcut still works, so the student can start session 1 on their own
 
 ## What's next
 
