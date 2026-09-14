@@ -1,5 +1,7 @@
 # Talking Points — Session 5
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 For the instructor. Short discussions for the waits: builds, the model loading, the download, the last play-through. Same rules: ask first, let the student guess, fill in, then have them ask the AI.
 
 It's the last session, so a few of these are about looking back rather than about the computer.

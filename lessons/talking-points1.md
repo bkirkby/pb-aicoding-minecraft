@@ -1,5 +1,7 @@
 # Talking Points — Session 1
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 For the instructor. These are short discussions to have with the student while something is loading: opencode thinking in plan mode, the first Gradle build pulling down Minecraft, an IDE indexing. Each one is a couple of minutes. Pick whichever fits the moment; you won't get through all of them, and you don't need to.
 
 The goal isn't to lecture. Ask the question, let the student guess, then fill in. Most of these end with something to ask the AI, because the point of the whole course is that the AI is right there and can explain its own world.

@@ -1,5 +1,7 @@
 # Session 5 — On Its Own
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 Last session. Two jobs, and then a step back.
 
 First, the mod stops depending on you. Right now the pet only thinks if someone started llama-server by hand. Today the mod checks the machine, asks the player before downloading anything, fetches llama.cpp and the model itself, starts the server, and shuts it down when the game closes, with the canned lines waiting at every step where something's missing.

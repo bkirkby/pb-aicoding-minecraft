@@ -1,5 +1,7 @@
 # Talking Points — Session 2
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 For the instructor. Short discussions to have while something is loading: Gradle building, Minecraft launching, a world generating. Same rules as [session 1's talking points](talking-points1.md): ask first, let the student guess, then fill in, and end by having them ask the AI.
 
 Companion to [Session 2](session2.md).

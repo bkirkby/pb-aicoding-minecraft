@@ -4,7 +4,7 @@
 
 # Learn AI Coding Through Minecraft Modding
 
-A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting).
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
 
 Course materials for **Learn AI Coding Through Minecraft Modding** (curriculum codename: *The Sentience Quest*). Students build a Fabric mod for Minecraft Java Edition while learning to work with an AI coding agent.
 

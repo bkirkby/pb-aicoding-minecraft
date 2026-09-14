@@ -4,7 +4,7 @@
 
 # Windows Setup Guide — The Sentience Quest
 
-A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting).
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
 
 This gets a Windows machine ready for session 1. Treat it as its own short session with the instructor present: the script runs for 10-15 minutes mostly on its own, and the sign-in and Modrinth steps after it are done together. Allow 30-45 minutes all in. macOS and Linux guides are coming — this one's Windows-only.
 

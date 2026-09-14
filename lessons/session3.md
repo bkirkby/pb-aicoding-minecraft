@@ -1,5 +1,7 @@
 # Session 3 — How It Should Feel
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 By now the mod does things. The quest giver is there, the quests exist in some form, and somewhere in the code is a potion that wakes up a pet. Whether all of it works yet is beside the point today. Today is about whether it's *good*.
 
 Working and good are different questions. The AI can answer the first one. Only you can answer the second. This session is about taste: deciding what the player should feel at each moment, telling the AI, and then playing it until it feels that way.

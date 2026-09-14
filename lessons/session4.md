@@ -1,5 +1,7 @@
 # Session 4 — A Brain for the Pet
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 Until now the pet says lines you wrote. Today it starts making its own. You'll run a small language model on your own laptop, talk to it directly, and then wire the pet up to it so its replies are generated on the spot. The lines you wrote don't go away: they become the fallback for when the model isn't there.
 
 This is a big change, so it's two sessions. Today: get a model running locally, design how the mod should use it, and make the pet say one generated line with a safe fallback. Next session: teach the mod to find, download, and start the model on its own, and give the pet a real personality.

@@ -1,5 +1,7 @@
 # Lessons
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 One Markdown file per session, numbered: `session1.md`, `session2.md`, and so on. Each one should say what the session is for, what it assumes is already done, the steps, and what the student should walk away with. Each session has a matching `talking-points<N>.md` for the instructor: short discussions to have while something is loading.
 
 | Session | What happens |

@@ -1,5 +1,7 @@
 # Test Commands Cheat Sheet
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 Minecraft's chat commands are the fastest way to get to the thing you're testing. You're not playing when you test; you're checking whether one moment works. Skip everything else.
 
 Type these in the chat box (press **T** or **/**). **Tab** completes command names, item IDs, and selectors, so you don't have to remember spelling.

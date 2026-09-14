@@ -1,5 +1,7 @@
 # Session 2 — Into the Game
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 Today the mod goes into the real game. You'll get it building, put it into your Sentient Pets instance, launch Minecraft, and go looking for the quest giver. Something will probably go wrong, and that's the point: the main skill today is telling the AI what's wrong in a way it can act on.
 
 This assumes session 1 is done: there's a `PLAN.md` in the project and the AI wrote some code. It doesn't matter if that code builds or runs yet. If you don't have a `PLAN.md`, go back to [Session 1](session1.md).

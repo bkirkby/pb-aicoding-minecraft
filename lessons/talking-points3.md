@@ -1,5 +1,7 @@
 # Talking Points — Session 3
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 For the instructor. Short discussions for the waits: builds, launches, IntelliJ opening for the first time. Same rules as before: ask first, let the student guess, fill in, then have them ask the AI.
 
 This session is about taste, so most of these are less "how does the computer work" and more "how do you know if something is good." That's a harder conversation and a more important one.

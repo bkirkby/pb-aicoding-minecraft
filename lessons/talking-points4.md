@@ -1,5 +1,7 @@
 # Talking Points — Session 4
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 For the instructor. Short discussions for the waits: the model loading, the first slow replies, builds. Same rules: ask first, let the student guess, fill in, then have them ask the AI.
 
 Today the student meets a second AI, and it's a good day to draw contrasts with the first one. Most of these are about the difference.

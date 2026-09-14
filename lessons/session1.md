@@ -1,5 +1,7 @@
 # Session 1 — The First Prompt
 
+A program by [Pheirce Bytes](https://www.pheircebytes.com/ai-consulting), in partnership with [Bright Tomorrow](https://www.brighttomorrowmath.com/).
+
 Today you tell the AI what you want to build and let it plan the first version of the Sentient Pets mod. You won't write any code yourself. Your job is to describe the game you want clearly, and then get out of the way.
 
 This assumes setup is done: the shortcuts are in the Pheirce Bytes folder on your Desktop, opencode is signed in, and the Sentient Pets instance exists in Modrinth App. If not, go back to the [Windows Setup Guide](../guides/windows-setup-guide.md).
