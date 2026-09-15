@@ -6,7 +6,7 @@ Today you tell the AI what you want to build and let it plan the first version o
 
 This assumes setup is done: the shortcuts are in the Pheirce Bytes folder on your Desktop, opencode is signed in, and the Sentient Pets instance exists in Modrinth App. If not, go back to the [Windows Setup Guide](../guides/windows-setup-guide.md).
 
-## The mindset: your AI is a partner, not a tool
+## The mindset: treat your AI as a partner, not just a tool
 
 Before you type anything, get this straight in your head.
 
