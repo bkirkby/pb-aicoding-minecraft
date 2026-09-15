@@ -12,20 +12,21 @@ Companion to [Session 5](session5.md).
 
 ## While the flow is being designed
 
-### Ask before you take
+### What a mod owes the player
 
-**Ask:** "A game you just installed starts downloading two gigabytes without telling you. How do you feel about that game?"
+**Ask:** "A game you just installed starts downloading two and a half gigabytes and doesn't say a word. How do you feel about that game?"
 
-They know. Everyone's had it happen. The rules the student is building into the mod are the rules they'd want:
+They know. Everyone's had it happen. The mod is going to download without a prompt, so what it owes the player is honesty and manners:
 
-- **Say what, how big, and why** before doing it
-- **Take no for an answer,** and don't ask again five minutes later
-- **Show progress,** so nobody wonders if it's stuck
-- **Work anyway if they say no,** just with less
+- **Say what it's doing and how big it is,** the moment it starts
+- **Show progress,** so nobody wonders if the game is stuck
+- **Don't get in the way.** The game stays playable while the bytes come down
+- **Don't do it if the machine can't handle it,** and say so once, not every time
+- **Clean up after a failure** and try again later, quietly
 
-This is what people mean by respecting the user. It's not a feature. It's the difference between software people keep and software people delete. The fallback from session 4 is what makes "no" a real option: the mod can afford to take no because the pet still talks.
+This is what people mean by respecting the user. It's not a feature. It's the difference between software people keep and software people delete. The fallback from session 4 is what makes the rest possible: the mod can afford to skip the download on a weak machine because the pet still talks.
 
-**Try it:** have the student read the mod's ask out loud as if they'd never seen it. Would they say yes? Do they know what they're agreeing to?
+**Try it:** have the student read the mod's download message out loud as if they'd never seen it. Do they know what's happening and why? Would it worry them?
 
 ### What "can this machine handle it" means
 
@@ -34,10 +35,10 @@ This is what people mean by respecting the user. It's not a feature. It's the di
 Three things, and they're different:
 
 - **Disk.** Is there room for the download? Easy to check, easy to forget.
-- **Memory.** The model gets loaded into RAM to run. A 2 GB file needs a bit more than 2 GB free, on top of Minecraft's own appetite. A laptop with 8 GB total is borderline. 4 GB won't.
+- **Memory.** The model gets loaded into RAM to run. A 2.4 GB file needs a bit more than that free, on top of Minecraft's own appetite. A laptop with 8 GB total is borderline. 4 GB won't.
 - **Speed.** Not a yes-or-no. A slow CPU still runs it, just slowly. This one's about whether it's *worth* it, and that's the player's call, not the mod's.
 
-The mod checks the first two and asks about the third by asking at all.
+The mod checks the first two. The third is a judgment call, and the safe default from the next topic is how the mod makes it.
 
 **Try it:** ask the AI, "How much memory does this laptop have, how much is free, and how does the mod check that?"
 
@@ -145,7 +146,7 @@ Write Java. Read the Fabric API. Read a 400-line log in a second. Know how a hun
 
 ### What could you do that the AI couldn't?
 
-Decide what the game should be. Know when the quest felt flat. Write the pet's first words. Say no to the particle system. Notice the download prompt would step on the wake-up moment. Decide two remembered turns was enough.
+Decide what the game should be. Know when the quest felt flat. Write the pet's first words. Say no to the particle system. Notice the download message would step on the wake-up moment. Decide two remembered turns was enough.
 
 Every one of those is a judgment, and none of them is going away. The tools will get better at the first list. The second list is the job.
 
@@ -168,7 +169,7 @@ The student has never read most of that code. They'll understand more of the tou
 
 ## Spares
 
-**Why not put llama.cpp inside the jar?** Size, for one: the jar would be huge and most players might say no anyway. Licenses, for another. And the program is different for every kind of computer, so the jar would need all of them. Downloading the right one on demand is the honest answer. Ask the AI what else it would consider.
+**Why not put llama.cpp inside the jar?** Size, for one: the jar would be huge, and every player would pay for it whether their machine could run the model or not. Licenses, for another. And the program is different for every kind of computer, so the jar would need all of them. Downloading the right one on demand is the honest answer. Ask the AI what else it would consider.
 
 **Where do models come from?** Most public models live on Hugging Face, a site that's to models what GitHub is to code. The model file the mod downloads is one file on one page there. Have the student find it and look at the page: who made it, how big, what license.
 

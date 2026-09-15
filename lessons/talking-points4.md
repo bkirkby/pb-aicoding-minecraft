@@ -29,16 +29,16 @@ The cost is that it's slower and dumber. Which is the next topic.
 
 **Try it:** ask the opencode AI, "What are the tradeoffs between using you for the pet's dialogue and using a local model?" It'll give an honest answer, which is a little funny.
 
-### What's in the 2 GB file?
+### What's in the 2.4 GB file?
 
 **Ask:** "The model is one file. What's in it?"
 
-Numbers. Billions of them. A "3B model" has about three billion parameters, each a number learned during training. That's all a model is: a huge pile of numbers and a recipe for running text through them.
+Numbers. Billions of them. Phi-3.5 mini has about 3.8 billion parameters, each a number learned during training. That's all a model is: a huge pile of numbers and a recipe for running text through them.
 
 Two things worth landing:
 
-- **Size is smarts, roughly.** The opencode AI has hundreds of times more parameters. More parameters, more room to have learned things. A 3B model has read a lot but remembers it fuzzily. Ask it a date and it'll guess.
-- **Quantization is why it fits.** Each number is normally stored with lots of precision. Q4 rounds each one down to about 4 bits, a sixteenth of the size, and the model gets slightly worse. That's how three billion numbers fit in 2 GB instead of 12. It's the same idea as a compressed image: smaller, a bit blurrier, usually fine.
+- **Size is smarts, roughly.** The opencode AI has hundreds of times more parameters. More parameters, more room to have learned things. A model this size has read a lot but remembers it fuzzily. Ask it a date and it'll guess.
+- **Quantization is why it fits.** Each number is normally stored with lots of precision. Q4 rounds each one down to about 4 bits, a sixteenth of the size, and the model gets slightly worse. That's how nearly four billion numbers fit in 2.4 GB instead of 15. It's the same idea as a compressed image: smaller, a bit blurrier, usually fine.
 
 **Try it:** ask the AI, "What does Q4_K_M mean in the model's filename, and what did we lose by choosing it?"
 
@@ -52,7 +52,24 @@ The number people use is **tokens per second**. The server prints it after each 
 
 This is also why a pet is a good use for a small model: one sentence at a time, and a pause before it speaks reads as thinking rather than lag. The same model writing an essay would be painful.
 
-**Try it:** run the server with `-ngl 99`, which pushes the model onto the GPU if there is one, and compare tokens per second with and without.
+**Try it:** have the student find the tokens-per-second number in the server's output after a reply, and write it down. It comes back in the next topic.
+
+### Bigger models, and GPUs
+
+**Ask:** "Phi is the small, safe choice. What would a bigger one get us, and what would it cost?"
+
+This is a verbal lesson, not a build step. The course runs Phi on the CPU because it works on every machine. But the student should know what's above it.
+
+- **Bigger models are better company.** A 7B model, like Qwen2.5 7B Instruct at the same Q4 quantization, is about 4.7 GB and noticeably better at staying in character, following a conversation, and being funny on purpose. The step from 4B to 7B is one a player would feel.
+- **They need a real GPU.** A 7B model on a CPU is painfully slow. On a graphics card with 6 GB or more of memory it flies, because the whole model fits in the card's memory and the card does the math thousands of ways at once.
+- **llama.cpp has a build for each kind of GPU.** Metal on Macs. CUDA for NVIDIA on Windows. Vulkan for NVIDIA on Linux, and for AMD and Intel cards anywhere. And the CPU build, which is what the course uses. Picking the wrong one means the server doesn't start, which is why the safe default is CPU.
+- **How to find out what you have.** On Windows, open Task Manager's Performance tab and look for a GPU entry, or run `nvidia-smi` in PowerShell. If there's a dedicated card with several gigabytes of its own memory, the bigger model is worth trying. An "integrated" GPU sharing the laptop's RAM usually isn't faster than the CPU for this.
+
+If the student's machine has a real GPU and there's time, try it by hand: download the Vulkan or CUDA build, add `-ngl 99` to the server command to push the model onto the card, and compare the tokens-per-second number against the one they wrote down. Same Phi model, same prompt, different speed. Then, at home, they can download Qwen and do the same comparison for quality.
+
+Making the mod do this automatically, detect the GPU, pick the build and the model, download the right pair, and fall back to CPU when the GPU build won't start, is a real project and a good one. It's on the "where to go from here" list in session 5, and the [GPU Detection and Model Selection](../guides/gpu-model-selection.md) guide is the spec for it.
+
+**Try it:** ask the AI, "How would the mod tell whether this machine has a GPU worth using, and what could go wrong with each way of checking?"
 
 ---
 
